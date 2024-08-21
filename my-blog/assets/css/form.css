@@ -1,41 +1,152 @@
 
-.form-container{
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.dark-mode header {
+    background-color: #333;
+    border-bottom: 1px solid #555;
+}
+
+.dark-mode header h1 {
+    color: white;
+}
+
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+header button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.dark-mode header button {
+    background-color: white;
+    color: black;
+}
+
+
+.form-container {
     width: 50%;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 8px rgba( 0,0,0,0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
 
+.dark-mode .form-container {
+    background-color: #333;
+    border: 1px solid #555;
 }
 
 
-form{
+form {
     width: 100%;
 }
 
-
 input[type="text"], textarea {
-
     width: 90%;
     padding: 10px;
-    margin-top: 10 px;
+    margin-top: 10px;
     border: 2px solid #ccc;
     border-radius: 5px;
     background: #fff;
+    color: #000;
+    box-sizing: border-box;
+}
 
-
-
+.dark-mode input[type="text"], .dark-mode textarea {
+    background-color: #555;
+    border: 2px solid #777;
+    color: #fff;
 }
 
 
 button {
-
     width: 92%;
     padding: 10px;
     margin-top: 20px;
     background-color: black;
     color: white;
     border: none;
-    border-radius: 5 px;
-    font-size:1em;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode button {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.dark-mode footer {
+    background-color: #1f1f1f;
+    border-top: 1px solid #333;
+}
+
+footer a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.dark-mode footer a {
+    color: #ffeb3b;
+}
+
+.footer-center {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-left p {
+    margin: 5px 0;
 }
