@@ -65,11 +65,9 @@ LocalStorage
 
 
 ## Pictures
+You can find all the pictures in the screenshots folder 
 
-![Screenshots of the Personal Blog](.assets/screenshots /Screenshot%202024-08-21%20at%206.51.04 PM.png)
-![Screenshot of the Personal Blog](/assets/screenshots /Screenshot%202024-08-21%20at%206.52.27 PM.png)
-![Screenshot of the Personal Blog](/assets/screenshots /Screenshot%202024-08-21%20at%206.52.59 PM.png)
-![Screenshot of the Personal Blog](/assets/screenshots /Screenshot%202024-08-21%20at%206.53.20 PM.png)
+
 
 
 ## Credits
